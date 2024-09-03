@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+
+  db:
+    image: postgres:latest
+    container_name: GoPostgres
+    environment:
+      POSTGRES_PASSWORD: 123
+      POSTGRES_DB: mydb
+      POSTGRES_USER: dbuser
+    ports:
+      - "5432:5432"
